@@ -2,32 +2,10 @@ import Logo from './img/logo.png';
 import s from './Main.module.css';
 
 const ProgressBar = ({ progress }) => {
-  const styles = {
-    width: "278px",
-    height: "36px",
-    background: "#EDECFF",
-    border: "2px solid #565EEF",
-  };
-
-  const barStyles = {
-    width: `${progress}%`,
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    background: "blueviolet",
-    border: "22px 0px 0px 22px",
-  };
-
-  const barColor = [
-    { width: "100%", background: "#0984e3" },
-    { width: "60%", background: "#d63031" },
-    { width: "40%", background: "#6c5ce7" },
-  ];
-
+  
   return (
     <div className={s.bar}>
-      <div style={{ ...barStyles, ...barColor[progress - 1] }}>{progress}%</div>
+      <div className={s.barStyle} style={{width: progress * 2.35}}>{progress}%</div>
     </div>
   );
 };

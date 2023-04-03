@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -102,8 +104,8 @@ p {
   width: 278px;
   height: 36px;
   background: #EDECFF;
-border: 2px solid #565EEF;
-border-radius: 22px
+  border: 2px solid #565EEF;
+  border-radius: 22px
 }
 
 .about {
@@ -129,6 +131,18 @@ padding: 36px;
   display: flex;
   gap: 72px;
   margin: 27px;
+}
+
+.barStyle {
+  background: #565EEF;
+  border-radius: 22px 0px 0px 22px;
+  height: 38px;
+  color: #EDECFF;
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
 }
 
 .progress_info {
